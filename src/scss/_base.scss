@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700;900&family=Roboto:wght@400;500;700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -37,12 +39,20 @@ img {
     height: auto;
 }
 
-body {}
+body {
+
+    font: 400 16px/1.75 $roboto;
+
+    &.no-scroll {
+        overflow: hidden;
+    }
+
+}
 
 a {
-    text-decoration: underline;
-    color: #000;
     text-decoration: none;
+    cursor: pointer;
+    transition: 0.4s;
 }
 
 input {
@@ -63,7 +73,12 @@ section {
 }
 
 .container {
-    max-width: 1170px;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 0 15px;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
 }
