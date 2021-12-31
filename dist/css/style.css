@@ -290,7 +290,6 @@ section {
   color: #fff;
   background: black;
   background: linear-gradient(315deg, black 15%, #c10000 40%, #fa0000 50%, rgba(136, 0, 0, 0.98083) 60%, black 85%);
-  max-height: 100vh;
   position: relative; }
   .education__row {
     display: flex;
@@ -335,14 +334,22 @@ section {
       font-family: "Roboto", serif;
       color: rgba(255, 255, 255, 0.502);
       line-height: 1.438; }
-      .education__column p p::after {
+      .education__column p:after {
+        display: block;
+        position: relative;
         content: '';
         width: 500px;
         height: 4px;
-        top: 0;
-        left: 0;
-        padding-bottom: 30px;
+        background: #fff;
         color: #fff; }
+
+.work__top {
+  text-align: center; }
+  .work__top h2 {
+    color: #000;
+    text-align: center; }
+  .work__top p {
+    color: rgba(0, 0, 0, 0.702); }
 
 
 /*# sourceMappingURL=style.css.map*/

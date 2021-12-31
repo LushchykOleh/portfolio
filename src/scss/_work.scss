@@ -1,0 +1,17 @@
+.work {
+
+  &__top {
+
+    text-align: center;
+
+
+    h2 {
+      color: $black;
+      text-align: center;
+    }
+
+    p {
+      color: $black_transparent;
+    }
+  }
+}
