@@ -37,7 +37,7 @@
       position: relative;
       width: calc(25% - 30px);
       flex-shrink: 0;
-      margin: 15px;
+      margin: 0 15px;
 
       @include screen(850) {
         width: calc(40% - 30px);
