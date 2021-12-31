@@ -4,7 +4,7 @@
 
   background: rgb(0, 0, 0);
   background: linear-gradient(315deg, rgba(0, 0, 0, 1) 15%, rgba(193, 0, 0, 1) 40%, rgba(250, 0, 0, 1) 50%, rgba(136, 0, 0, 0.9808298319327731) 60%, rgba(0, 0, 0, 1) 85%);
-  max-height: 100vh;
+
   position: relative;
 
   &__row {
@@ -55,6 +55,8 @@
       color: rgba(255, 255, 255, 0.702);
       line-height: 1.438;
       padding: 11px 0 11px;
+
+
     }
 
     p {
@@ -65,20 +67,17 @@
       line-height: 1.438;
 
 
+      &:after {
 
-      p::after {
-
-
-
+        display: block;
+        position: relative;
         content: '';
         width: 500px;
         height: 4px;
-        top: 0;
-        left: 0;
-        padding-bottom: 30px;
+        background: $white;
         color: $white;
-      }
 
+      }
     }
 
   }
