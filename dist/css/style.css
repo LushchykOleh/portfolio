@@ -235,7 +235,7 @@ section {
       position: relative;
       width: calc(25% - 30px);
       flex-shrink: 0;
-      margin: 15px; }
+      margin: 0 15px; }
       @media (max-width: 850px) {
         .working__row .col-25 {
           width: calc(40% - 30px);
@@ -292,12 +292,57 @@ section {
   background: linear-gradient(315deg, black 15%, #c10000 40%, #fa0000 50%, rgba(136, 0, 0, 0.98083) 60%, black 85%);
   max-height: 100vh;
   position: relative; }
-  .education h3 {
-    text-transform: uppercase;
-    font-family: "Raleway", sans-serif;
-    font-size: 26px;
-    font-weight: 700;
-    line-height: 1.077; }
+  .education__row {
+    display: flex;
+    justify-content: space-between; }
+    .education__row-wrapper {
+      margin: 122px 0 70px;
+      display: flex; }
+  .education__column {
+    max-width: 580px;
+    text-align: start;
+    padding: 0 40px;
+    margin-right: 15px;
+    width: 580px;
+    height: auto;
+    background: black;
+    background: linear-gradient(167deg, black 29%, rgba(250, 0, 0, 0.9052) 75%, black 94%);
+    padding-bottom: 70px; }
+    .education__column h3 {
+      text-transform: uppercase;
+      font-family: "Raleway", sans-serif;
+      font-size: 26px;
+      font-weight: 700;
+      line-height: 1.077;
+      padding: 60px 0 65px; }
+    .education__column .text-18 {
+      font-size: 18px;
+      font-weight: 700;
+      font-family: "Roboto", serif;
+      line-height: 1.556;
+      color: rgba(255, 255, 255, 0.902);
+      padding: 11px 0 11px; }
+    .education__column .text-16 {
+      font-size: 16px;
+      font-weight: 500;
+      font-family: "Roboto", serif;
+      color: rgba(255, 255, 255, 0.702);
+      line-height: 1.438;
+      padding: 11px 0 11px; }
+    .education__column p {
+      font-style: 16px;
+      font-weight: 400;
+      font-family: "Roboto", serif;
+      color: rgba(255, 255, 255, 0.502);
+      line-height: 1.438; }
+      .education__column p p::after {
+        content: '';
+        width: 500px;
+        height: 4px;
+        top: 0;
+        left: 0;
+        padding-bottom: 30px;
+        color: #fff; }
 
 
 /*# sourceMappingURL=style.css.map*/
