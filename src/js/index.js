@@ -3,8 +3,8 @@ import Swiper, { Autoplay, Navigation, Pagination } from 'swiper';
 
 //menu mobile
 $('.header__navigation-button').on('click', function() {
-    $('body').toggleClass('no-scroll');
     $('.header__navigation').toggleClass('opened');
+    $('body').toggleClass('no-scroll');
 })
 
 
@@ -23,19 +23,7 @@ $(window).scroll(function(){
     }
 })
 
-//Anchor links
-$('a').on('click', function (e) {
-    e.preventDefault();
-    const hh = $('.header').outerHeight();
-    if(this.hash !=='') {
-        const hash = this.hash;
-        $('html, body').animate({
-            scrollTop: $(hash).offset().top - hh
-        }, 360, function () {
-            window.location.hash = hash - hh;
-        })
-    }
-})
+ 
 
 
 
