@@ -1,55 +1,29 @@
  window.$ = window.jQuery = require('jquery');
 import Swiper, { Autoplay, Navigation, Pagination } from 'swiper';
 
-//menu mobail
-$(document).ready(function () {
-    $('.menu').on('click', function () {
-        $('.navigation').slideToggle();
-    })
-});
-
-$(window).resize(function () {
-    const windowWidth = $(window).outerWidth();
-    if(windowWidth > 750){
-        $('.navigation').attr('style');
-    }
-})
-//--
-
-//Anchor links
-$('a').on('click', function (e) {
-    e.preventDefault();
-    const hh = $('.header').outerHeight();
-    if(this.hash !=='') {
-        const hash = this.hash;
-        $('html, body').animate({
-            scrollTop: $(hash).offset().top - hh
-        }, 360, function () {
-            window.location.hash = hash - hh;
-        })
-    }
+//menu mobile
+$('.header__navigation-button').on('click', function() {
+    $('.header__navigation').toggleClass('opened');
+    $('body').toggleClass('no-scroll');
 })
 
 
+$(document).ready(function (){
 
-Swiper.use([ Autoplay, Navigation, Pagination ]);
-
-
-    //Tabs
-    $('.tabs__button').on('click', function () {
-        $(".tabs .tabs__button").removeClass("active").eq($(this).index()).addClass("active");
-        $(".tabs__item").hide().eq($(this).index()).fadeIn();
-    }).eq(0).addClass("active");
-    $(".tabs__item").eq(0).fadeIn();
 })
 
-$(window).scroll(function () {
-    const headerHeight = $('.header').outerHeight();
-    const bannerHeight = $('.main-banner').outerHeight();
-    if($(window).scrollTop() >= (bannerHeight - headerHeight)) {
-        $('.header').addClass('sticky');
+//Sticky
+$(window).scroll(function(){
+    const bannerHeight = $('.header').outerHeight();
+    if($(window).scrollTop() >= bannerHeight) {
+        $('.header__wrapper').addClass('sticky');
     }
     else {
-        $('.header').removeClass('sticky');
+        $('.header__wrapper').removeClass('sticky');
     }
 })
+
+ 
+
+
+

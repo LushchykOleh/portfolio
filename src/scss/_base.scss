@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700;900&family=Roboto:wght@400;500;700&display=swap');
 
 * {
     margin: 0;
@@ -40,14 +40,19 @@ img {
 }
 
 body {
-    font: 400 14px/1.25 $font-roboto;
-    color: $font-color;
+
+    font: 400 16px/1.75 $roboto;
+
+    &.no-scroll {
+        overflow: hidden;
+    }
+
 }
 
 a {
-    text-decoration: underline;
-    color: #000;
     text-decoration: none;
+    cursor: pointer;
+    transition: 0.4s;
 }
 
 input {
@@ -68,13 +73,12 @@ section {
 }
 
 .container {
-    max-width: 1170px;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 0 15px;
 }
 
-
-.red {
-    color: $red;
+.flex {
+    display: flex;
+    flex-wrap: wrap;
 }
-

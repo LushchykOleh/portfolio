@@ -1,0 +1,19 @@
+.education {
+
+  color: $white;
+
+  background: rgb(0, 0, 0);
+  background: linear-gradient(315deg, rgba(0, 0, 0, 1) 15%, rgba(193, 0, 0, 1) 40%, rgba(250, 0, 0, 1) 50%, rgba(136, 0, 0, 0.9808298319327731) 60%, rgba(0, 0, 0, 1) 85%);
+  max-height: 100vh;
+  position: relative;
+
+  h3 {
+    text-transform: uppercase;
+    font-family: $raleway;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 1.077;
+  }
+
+  h4 {}
+}
