@@ -344,12 +344,15 @@ section {
         color: #fff; }
 
 .work__top {
+  padding: 125px 0 45px; }
+
+.work h2 {
+  color: #000;
   text-align: center; }
-  .work__top h2 {
-    color: #000;
-    text-align: center; }
-  .work__top p {
-    color: rgba(0, 0, 0, 0.702); }
+
+.work p {
+  color: rgba(0, 0, 0, 0.702);
+  text-align: center; }
 
 
 /*# sourceMappingURL=style.css.map*/
