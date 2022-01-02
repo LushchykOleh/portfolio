@@ -1,0 +1,122 @@
+.contact {
+
+  background: black;
+  background: linear-gradient(315deg, black 15%, #c10000 40%, #fa0000 50%, rgba(136, 0, 0, 0.98083) 60%, black 85%);
+
+  &__column {
+    padding: 123px 0 123px;
+    display: flex;
+
+    .column-left {
+      max-width: 580px;
+      flex-basis: 580px;
+      padding: 40px;
+      background: black;
+      background: linear-gradient(315deg, black 15%, #c10000 40%, #fa0000 50%, rgba(136, 0, 0, 0.98083) 60%, black 85%);
+
+      h3 {
+        font-size: 26px;
+        font-weight: bold;
+        font-family: $raleway;
+        line-height: 0.551;
+        color: $white;
+        padding: 23px 0;
+        text-transform: uppercase;
+      }
+
+      .form {
+        max-width: 580px;
+        flex-basis: 580px;
+        flex-grow: 1;
+
+        textarea {
+          height: 200px;
+          resize: vertical;
+          width: 100%;
+          padding: 5px 20px;
+        }
+
+        .btn {
+          text-align: center;
+          text-transform: uppercase;
+          min-width: 200px;
+          padding: 8px;
+          color: $white;
+          background: #ff2b4a;
+        }
+
+        .form-left {}
+      }
+
+      .form input[type='text'] {
+        border: 1px solid white;
+        height: 50px;
+        padding: 5px 20px;
+        outline: none;
+        font-size: 12px;
+        font-family: $roboto;
+        font-weight: 400;
+        width: 100%;
+        margin: 25px 0;
+
+      }
+    }
+
+    .column-right {
+      max-width: 580px;
+      margin-left: 15px;
+      width: 580px;
+      flex-wrap: wrap;
+
+    }
+
+    h3 {
+      font-size: 26px;
+      font-weight: bold;
+      font-family: $raleway;
+      line-height: 1.077;
+      color: $white;
+      padding: 23px 0;
+      text-transform: uppercase;
+
+    }
+
+    .address {
+      padding-left: 40px;
+      background: black;
+      background: linear-gradient(315deg, black 15%, #c10000 40%, #fa0000 50%, rgba(136, 0, 0, 0.98083) 60%, black 85%);
+      padding: 40px 20px;
+      color: $white;
+      line-height: 1.876;
+      font-size: 16px;
+      font-family: $roboto;
+    }
+
+    .phone {
+      margin-top: 15px;
+      padding-left: 40px;
+      background: black;
+      background: linear-gradient(315deg, black 15%, #c10000 40%, #fa0000 50%, rgba(136, 0, 0, 0.98083) 60%, black 85%);
+      padding: 40px 20px;
+
+      a {
+        font-size: 16px;
+        font-family: $roboto;
+        color: $white_transparent;
+        line-height: 1.876;
+      }
+    }
+
+    .web {
+      margin-top: 15px;
+      padding-left: 40px;
+      background: black;
+      background: linear-gradient(315deg, black 15%, #c10000 40%, #fa0000 50%, rgba(136, 0, 0, 0.98083) 60%, black 85%);
+      padding: 40px 20px;
+    }
+
+  }
+
+
+
+}
