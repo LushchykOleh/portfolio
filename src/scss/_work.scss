@@ -2,16 +2,17 @@
 
   &__top {
 
+    padding: 125px 0 45px;
+
+  }
+
+  h2 {
+    color: $black;
     text-align: center;
+  }
 
-
-    h2 {
-      color: $black;
-      text-align: center;
-    }
-
-    p {
-      color: $black_transparent;
-    }
+  p {
+    color: $black_transparent;
+    text-align: center;
   }
 }
