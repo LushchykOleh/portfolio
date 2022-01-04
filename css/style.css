@@ -427,7 +427,7 @@ section {
 
 .contact {
   background: black;
-  background: linear-gradient(315deg, black 15%, #c10000 40%, #fa0000 50%, rgba(136, 0, 0, 0.98083) 60%, black 85%); }
+  background: linear-gradient(315deg, black 1%, #c10000 40%, #fa0000 50%, rgba(136, 0, 0, 0.98083) 60%, black 120%); }
   .contact__column {
     padding: 123px 0 123px;
     display: flex; }
@@ -436,7 +436,7 @@ section {
       flex-basis: 580px;
       padding: 40px;
       background: black;
-      background: linear-gradient(315deg, black 15%, #c10000 40%, #fa0000 50%, rgba(136, 0, 0, 0.98083) 60%, black 85%); }
+      background: linear-gradient(315deg, black 1%, #c10000 40%, #fa0000 50%, rgba(136, 0, 0, 0.98083) 60%, black 120%); }
       .contact__column .column-left h3 {
         font-size: 26px;
         font-weight: bold;
@@ -453,14 +453,25 @@ section {
           height: 200px;
           resize: vertical;
           width: 100%;
-          padding: 5px 20px; }
+          padding: 5px 20px;
+          margin-top: 27px;
+          background: none;
+          border: 1px solid white;
+          color: #fff; }
         .contact__column .column-left .form .btn {
           text-align: center;
-          text-transform: uppercase;
           min-width: 200px;
           padding: 8px;
           color: #fff;
-          background: #ff2b4a; }
+          background: #ff2b4a;
+          float: right;
+          margin: 35px 0 0;
+          cursor: pointer;
+          border: none; }
+          .contact__column .column-left .form .btn:hover {
+            color: #000;
+            background-color: rgba(255, 255, 255, 0.502);
+            font-weight: 700; }
       .contact__column .column-left .form input[type='text'] {
         border: 1px solid white;
         height: 50px;
@@ -470,7 +481,8 @@ section {
         font-family: "Roboto", serif;
         font-weight: 400;
         width: 100%;
-        margin: 25px 0; }
+        margin: 13px 0;
+        background: none; }
     .contact__column .column-right {
       max-width: 580px;
       margin-left: 15px;
@@ -487,18 +499,23 @@ section {
     .contact__column .address {
       padding-left: 40px;
       background: black;
-      background: linear-gradient(315deg, black 15%, #c10000 40%, #fa0000 50%, rgba(136, 0, 0, 0.98083) 60%, black 85%);
-      padding: 40px 20px;
+      background: linear-gradient(315deg, black 1%, #c10000 40%, #fa0000 50%, rgba(136, 0, 0, 0.98083) 60%, black 120%);
+      padding: 40px 63px;
       color: #fff;
       line-height: 1.876;
       font-size: 16px;
       font-family: "Roboto", serif; }
+      .contact__column .address div {
+        font-size: 16px;
+        font-family: "Roboto", serif;
+        color: rgba(255, 255, 255, 0.502);
+        line-height: 1.876; }
     .contact__column .phone {
       margin-top: 15px;
       padding-left: 40px;
       background: black;
-      background: linear-gradient(315deg, black 15%, #c10000 40%, #fa0000 50%, rgba(136, 0, 0, 0.98083) 60%, black 85%);
-      padding: 40px 20px; }
+      background: linear-gradient(315deg, black 1%, #c10000 40%, #fa0000 50%, rgba(136, 0, 0, 0.98083) 60%, black 120%);
+      padding: 40px 63px; }
       .contact__column .phone a {
         font-size: 16px;
         font-family: "Roboto", serif;
@@ -508,8 +525,73 @@ section {
       margin-top: 15px;
       padding-left: 40px;
       background: black;
-      background: linear-gradient(315deg, black 15%, #c10000 40%, #fa0000 50%, rgba(136, 0, 0, 0.98083) 60%, black 85%);
-      padding: 40px 20px; }
+      background: linear-gradient(315deg, black 1%, #c10000 40%, #fa0000 50%, rgba(136, 0, 0, 0.98083) 60%, black 120%);
+      padding: 40px 63px; }
+      .contact__column .web a {
+        text-decoration: none;
+        color: rgba(255, 255, 255, 0.502);
+        font-size: 16px;
+        font-family: "Roboto", serif;
+        color: rgba(255, 255, 255, 0.502);
+        line-height: 1.876; }
+
+.footer {
+  padding: 50px 0 60px;
+  background: rgba(0, 0, 0, 0.9);
+  align-items: center;
+  display: flex;
+  justify-content: center; }
+  .footer__row-top {
+    padding: 15px;
+    align-items: center; }
+    .footer__row-top .sociale {
+      display: block;
+      transition: 0.3s;
+      text-align: center; }
+      .footer__row-top .sociale ul {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 15px; }
+        .footer__row-top .sociale ul li {
+          border-right: 2px solid rgba(255, 255, 255, 0.502);
+          padding: 0 15px; }
+        .footer__row-top .sociale ul .be {
+          border-right: none; }
+        .footer__row-top .sociale ul a {
+          display: flex;
+          align-items: center;
+          /*
+          &:focus {
+            background-image: url(../images/twitter-yellow.png) no-repeat 50% 50%;
+            color: #ffb546;
+  
+          }
+  
+          &:hover {
+            display: block;
+            transition: .4s;
+            border: 1px solid #ffb546;
+            background-image: url(../images/twitter-1.png)no-repeat 50% 50%;
+          }
+          */ }
+          .footer__row-top .sociale ul a img:hover {
+            background: green; }
+    .footer__row-top img {
+      width: 32px;
+      height: auto; }
+  .footer__row-bottom {
+    padding: 15px;
+    align-items: center; }
+    .footer__row-bottom .text-12 {
+      color: rgba(255, 255, 255, 0.502);
+      text-transform: normal;
+      font-size: 12px;
+      font-weight: 400;
+      font-family: "Roboto", serif;
+      color: rgba(255, 255, 255, 0.502);
+      padding: 10px 0 10px;
+      text-align: center; }
 
 
 /*# sourceMappingURL=style.css.map*/
