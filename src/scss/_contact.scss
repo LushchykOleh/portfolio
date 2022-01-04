@@ -1,7 +1,7 @@
 .contact {
 
   background: black;
-  background: linear-gradient(315deg, black 15%, #c10000 40%, #fa0000 50%, rgba(136, 0, 0, 0.98083) 60%, black 85%);
+  background: linear-gradient(315deg, black 1%, #c10000 40%, #fa0000 50%, rgba(136, 0, 0, 0.98083) 60%, black 120%);
 
   &__column {
     padding: 123px 0 123px;
@@ -12,7 +12,7 @@
       flex-basis: 580px;
       padding: 40px;
       background: black;
-      background: linear-gradient(315deg, black 15%, #c10000 40%, #fa0000 50%, rgba(136, 0, 0, 0.98083) 60%, black 85%);
+      background: linear-gradient(315deg, black 1%, #c10000 40%, #fa0000 50%, rgba(136, 0, 0, 0.98083) 60%, black 120%);
 
       h3 {
         font-size: 26px;
@@ -34,18 +34,31 @@
           resize: vertical;
           width: 100%;
           padding: 5px 20px;
+          margin-top: 27px;
+          background: none;
+          border: 1px solid white;
+          color: $white;
         }
 
         .btn {
           text-align: center;
-          text-transform: uppercase;
           min-width: 200px;
           padding: 8px;
           color: $white;
           background: #ff2b4a;
+          float: right;
+          margin: 35px 0 0;
+          cursor: pointer;
+          border: none;
+
+          &:hover {
+            color: $black;
+            background-color: $white_transparent;
+            font-weight: 700;
+          }
         }
 
-        .form-left {}
+
       }
 
       .form input[type='text'] {
@@ -57,7 +70,8 @@
         font-family: $roboto;
         font-weight: 400;
         width: 100%;
-        margin: 25px 0;
+        margin: 13px 0;
+        background: none;
 
       }
     }
@@ -84,20 +98,27 @@
     .address {
       padding-left: 40px;
       background: black;
-      background: linear-gradient(315deg, black 15%, #c10000 40%, #fa0000 50%, rgba(136, 0, 0, 0.98083) 60%, black 85%);
-      padding: 40px 20px;
+      background: linear-gradient(315deg, black 1%, #c10000 40%, #fa0000 50%, rgba(136, 0, 0, 0.98083) 60%, black 120%);
+      padding: 40px 63px;
       color: $white;
       line-height: 1.876;
       font-size: 16px;
       font-family: $roboto;
+
+      div {
+        font-size: 16px;
+        font-family: $roboto;
+        color: $white_transparent;
+        line-height: 1.876;
+      }
     }
 
     .phone {
       margin-top: 15px;
       padding-left: 40px;
       background: black;
-      background: linear-gradient(315deg, black 15%, #c10000 40%, #fa0000 50%, rgba(136, 0, 0, 0.98083) 60%, black 85%);
-      padding: 40px 20px;
+      background: linear-gradient(315deg, black 1%, #c10000 40%, #fa0000 50%, rgba(136, 0, 0, 0.98083) 60%, black 120%);
+      padding: 40px 63px;
 
       a {
         font-size: 16px;
@@ -111,8 +132,17 @@
       margin-top: 15px;
       padding-left: 40px;
       background: black;
-      background: linear-gradient(315deg, black 15%, #c10000 40%, #fa0000 50%, rgba(136, 0, 0, 0.98083) 60%, black 85%);
-      padding: 40px 20px;
+      background: linear-gradient(315deg, black 1%, #c10000 40%, #fa0000 50%, rgba(136, 0, 0, 0.98083) 60%, black 120%);
+      padding: 40px 63px;
+
+      a {
+        text-decoration: none;
+        color: $white-transparent;
+        font-size: 16px;
+        font-family: $roboto;
+        color: $white_transparent;
+        line-height: 1.876;
+      }
     }
 
   }

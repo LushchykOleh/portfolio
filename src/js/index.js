@@ -19,7 +19,7 @@ $(window).scroll(function(){
         $('.header__wrapper').addClass('sticky');
     }
     else {
-        $('.header__wrapper').removeClass('sticky');
+        $('.header').removeClass('sticky');
     }
 })
 
