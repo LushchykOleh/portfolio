@@ -100,8 +100,8 @@ const config = {
         new CopyWebpackPlugin({
             patterns: [
                 {
-                    from: "src/bg-images",
-                    to: "bg-images"
+                    from: "./src/bg-images/**/*",
+                    to: "./bg-images"
                 },
             ],
         }),
