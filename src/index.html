@@ -5,51 +5,50 @@
     <meta charset="UTF-8">
     <meta name="viewport"
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <style>
-        html {
-            scroll-behavior: smooth;
-            /* свойство scroll-behavior не наследуется, применяется к прокручиваемым блокам */
-        }
-    </style>
+
     <title>Startup</title>
 </head>
 
 <body>
     <div class="wrapper">
-        <header class="header">
+        <header class="header" id="header">
             <div class="header__wrapper">
                 <div class="container flex">
                     <span class="header__logo">
                         <img src="./images/logotype.png" alt="logotype">
                     </span>
-                    <nav class="header__navigation--inline flex">
-                        <a href="#">Home</a>
-                        <a href="#">Home</a>
-                        <a href="#working">working</a>
-                        <a href="#">Home</a>
+                    <nav class="header__navigation--inline">
+                        <a href="#header">Home</a>
+                        <a href="#about">About</a>
+                        <a href="#working">Working</a>
+                        <a href="#work">Work</a>
+                        <a href="#clients">Clients</a>
+                        <a href="#contact">Contact</a>
                     </nav>
                     <div class="header__navigation">
                         <span class="header__navigation-button">
 
                         </span>
                         <ul class="header__navigation-menu">
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">cls</a></li>
+                            <li><a href="#header">Home</a></li>
+                            <li><a href="#about">About</a></li>
                             <li><a href="#working">Working</a></li>
                             <li><a href="#work">Work</a></li>
                             <li><a href="#clients">Clients</a></li>
+                            <li><a href="#contact">Contact</a></li>
                         </ul>
                     </div>
                 </div>
-                <div class="header__main container">
-                    <h1 class="header__main-top">Lushchyk Oleh</h1>
-                    <p class="header__main-text">#User Experience #Music #Creative Direction</p>
-                </div>
+
+            </div>
+            <div class="header__main container">
+                <h1 class="header__main-top">Lushchyk Oleh</h1>
+                <p class="header__main-text">#User Experience #Music #Creative Direction</p>
             </div>
         </header>
         <main class="main">
             <div class="container">
-                <div class="about">
+                <div class="about" id="about">
                     <div class="about__left">
                         <img src="./images/award.jpg" alt="myself">
                     </div>
@@ -171,7 +170,9 @@
                     </div>
 
                     <div class="work__row-top">
-                        <div class="box" style=background-color:#10c6fc;>10c6fc</div>
+                        <div class="box" style=background-color:#10c6fc;>
+                            <img src="./images/startup-fotolia.jpg" alt="startup">
+                        </div>
                         <div class="box" style=background-color:#835aeb;>835aeb</div>
                         <div class="box" style=background-color:#002453;>002453</div>
                         <div class="box" style=background-color:#ff2b4a;>ff2b4a</div>
@@ -208,7 +209,7 @@
                     </div>
                 </div>
             </div>
-            <div class="contact">
+            <div class="contact" id="contact">
                 <div class="container">
                     <div class="contact__column">
                         <div class="column-left">
@@ -264,17 +265,17 @@
                             </li>
                             <li>
                                 <a href="#">
-                                    <img class="white" src="./images/in.png" alt="twitter">
+                                    <img class="white" src="./images/linked-in-logo-of-two-letters.png" alt="linked">
                                 </a>
                             </li>
                             <li>
                                 <a href="#">
-                                    <img class="white" src="./images/be.png" alt="twitter">
+                                    <img class="white" src="./images/behance.png" alt="behance">
                                 </a>
                             </li>
                             <li class="be">
                                 <a href="#">
-                                    <img class="white" src="./images/boll.png" alt="twitter">
+                                    <img class="white" src="./images/basket-ball.png" alt="ball">
                                 </a>
                             </li>
                         </ul>
