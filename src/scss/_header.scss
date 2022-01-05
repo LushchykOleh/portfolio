@@ -13,13 +13,12 @@
     padding: 40px 25px;
 
     &.sticky {
-      /*position: fixed;*/
+      position: fixed;
       background: rgb(0, 0, 0);
       background: linear-gradient(315deg, rgba(0, 0, 0, 1) 15%, rgba(193, 0, 0, 1) 40%, rgba(250, 0, 0, 1) 50%, rgba(136, 0, 0, 0.9808298319327731) 60%, rgba(0, 0, 0, 1) 85%);
       left: 0;
       top: 0;
       width: 100%;
-
       padding: 15px 0;
       z-index: 7;
 
@@ -46,14 +45,14 @@
     margin: 0 20px 0 0;
 
     img {
-      max-width: 70px;
+      max-width: 100px;
     }
   }
 
   .container {
     align-items: center;
     justify-content: space-between;
-    min-width: 100%;
+    max-width: 100%;
   }
 
   a {
@@ -105,8 +104,6 @@
       border: 2px solid $white;
       position: relative;
       z-index: 7;
-
-
     }
 
     &-menu {
@@ -126,7 +123,6 @@
         font-size: 20px;
         padding: 10px 0;
       }
-
     }
 
     &.opened {
@@ -146,7 +142,7 @@
     display: block;
     max-width: 560px;
     text-align: center;
-    margin: 265px 0 280px;
+    margin: 100px 0 280px;
 
     &-top {
       font-size: 65px;
