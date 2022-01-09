@@ -32,14 +32,19 @@
     margin: 15px 0;
 
     .box {
-      /*width: calc(25% - 15px);*/
+
+      // width: calc(25% - 15px);
       align-items: center;
       text-align: center;
       justify-content: center;
       display: flex;
       width: 285px;
       height: 270px;
+
+      //background-image: url(../images/startup-fotolia.jpg) no-repeat 50% 50%;
+
       position: relative;
+
 
       @include screen(1170) {
         margin: 15px 0;
@@ -62,14 +67,14 @@
         top: 0;
         width: 100%;
         height: 100%;
-        background-color: rgba(16, 198, 252, 0.5);
+        background-color: rgba(16, 198, 252, 0.9);
         text-align: center;
         right: 100%;
         opacity: 0;
         display: none;
         padding-top: 35%;
 
-        .descr-p {
+        p {
           color: $white;
           font-size: 40px;
           margin: 15px 0;
@@ -77,6 +82,7 @@
 
         span {
           color: $white;
+          // background-color: black;
 
         }
 
@@ -84,10 +90,23 @@
 
 
       img {
+
         width: 270px;
         height: 255px;
         position: absolute;
         cursor: pointer;
+
+        .descr {
+          position: absolute;
+          top: 0;
+          width: 100%;
+          height: 100%;
+          background: rgba(238, 130, 238, 0.7);
+          text-align: center;
+          right: 100%;
+
+
+        }
 
         &:hover {
           background-color: #10c6fc;
@@ -96,8 +115,21 @@
         }
       }
 
+      .img1 {
+        width: 280px;
+        height: 265px;
+        position: absolute;
+      }
+
+      .work-pages {
+        top: 0;
+        left: 0;
+
+
+      }
     }
 
+    //блок-2
     .box-1 {
       width: calc(33.3% - 15px);
       display: flex;
