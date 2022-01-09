@@ -317,7 +317,7 @@ section {
       font-size: 26px;
       font-weight: 700;
       line-height: 1.077;
-      padding: 60px 0 65px; }
+      padding: 40px 0 40px; }
     .education__column .text-18 {
       font-size: 18px;
       font-weight: 700;
@@ -384,10 +384,33 @@ section {
     display: flex;
     width: 285px;
     height: 270px;
-    background-image: url(../images/startup-fotolia.jpg) no-repeat 50% 50%; }
+    position: relative; }
     @media (max-width: 1170px) {
       .work__row-top .box, .work__row-buttom .box {
         margin: 15px 0; } }
+    .work__row-top .box:hover .descr, .work__row-buttom .box:hover .descr {
+      display: block;
+      cursor: pointer;
+      opacity: 1;
+      padding-top: 35%;
+      right: 0; }
+    .work__row-top .box .descr, .work__row-buttom .box .descr {
+      position: absolute;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(16, 198, 252, 0.9);
+      text-align: center;
+      right: 100%;
+      opacity: 0;
+      display: none;
+      padding-top: 35%; }
+      .work__row-top .box .descr p, .work__row-buttom .box .descr p {
+        color: #fff;
+        font-size: 40px;
+        margin: 15px 0; }
+      .work__row-top .box .descr span, .work__row-buttom .box .descr span {
+        color: #fff; }
     .work__row-top .box img, .work__row-buttom .box img {
       width: 270px;
       height: 255px;
@@ -400,12 +423,18 @@ section {
         height: 100%;
         background: rgba(238, 130, 238, 0.7);
         text-align: center;
-        right: 100%;
-        position: 0; }
+        right: 100%; }
       .work__row-top .box img:hover, .work__row-buttom .box img:hover {
         background-color: #10c6fc;
         opacity: 0.3;
         transition: 0.3s; }
+    .work__row-top .box .img1, .work__row-buttom .box .img1 {
+      width: 280px;
+      height: 265px;
+      position: absolute; }
+    .work__row-top .box .work-pages, .work__row-buttom .box .work-pages {
+      top: 0;
+      left: 0; }
   .work__row-top .box-1, .work__row-buttom .box-1 {
     width: calc(33.3% - 15px);
     display: flex;
@@ -579,22 +608,54 @@ section {
         .footer__row-top .sociale ul a {
           display: flex;
           align-items: center;
-          /*
-          &:focus {
-            background-image: url(../images/twitter-yellow.png) no-repeat 50% 50%;
-            color: #ffb546;
-  
-          }
-  
-          &:hover {
-            display: block;
-            transition: .4s;
-            border: 1px solid #ffb546;
-            background-image: url(../images/twitter-1.png)no-repeat 50% 50%;
-          }
-          */ }
-          .footer__row-top .sociale ul a img:hover {
-            background: green; }
+          position: relative; }
+        .footer__row-top .sociale ul .soc-fon1 {
+          position: absolute;
+          width: 50px;
+          height: 50px;
+          right: -9px;
+          justify-content: center;
+          align-items: center;
+          display: none;
+          background-color: rgba(127, 255, 0, 0.5);
+          border-radius: 15px; }
+        .footer__row-top .sociale ul .soc-fon2 {
+          position: absolute;
+          width: 50px;
+          height: 50px;
+          right: -9px;
+          justify-content: center;
+          align-items: center;
+          display: none;
+          background-color: rgba(56, 248, 229, 0.5);
+          border-radius: 15px; }
+        .footer__row-top .sociale ul .soc-fon3 {
+          position: absolute;
+          width: 50px;
+          height: 50px;
+          right: -9px;
+          justify-content: center;
+          align-items: center;
+          display: none;
+          background-color: rgba(255, 251, 3, 0.5);
+          border-radius: 15px; }
+        .footer__row-top .sociale ul .soc-fon4 {
+          position: absolute;
+          width: 50px;
+          height: 50px;
+          right: -9px;
+          justify-content: center;
+          align-items: center;
+          display: none;
+          background-color: rgba(255, 0, 0, 0.5);
+          border-radius: 15px; }
+        .footer__row-top .sociale ul:hover .soc-fon1,
+        .footer__row-top .sociale ul:hover .soc-fon2,
+        .footer__row-top .sociale ul:hover .soc-fon3,
+        .footer__row-top .sociale ul:hover .soc-fon4 {
+          display: block;
+          opacity: 1;
+          right: -9px; }
     .footer__row-top img {
       width: 32px;
       height: auto; }

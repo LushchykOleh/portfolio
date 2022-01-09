@@ -34,28 +34,72 @@
         a {
           display: flex;
           align-items: center;
+          position: relative;
 
-          img {
-            &:hover {
+        }
 
-              background: green;
-            }
-          }
+        .soc-fon1 {
+          position: absolute;
+          width: 50px;
+          height: 50px;
+          right: -9px;
+          justify-content: center;
+          align-items: center;
+          display: none;
+          background-color: rgba(127, 255, 0, 0.5);
+          border-radius: 15px;
 
-          /*
-          &:focus {
-            background-image: url(../images/twitter-yellow.png) no-repeat 50% 50%;
-            color: #ffb546;
-  
-          }
-  
-          &:hover {
+        }
+
+        .soc-fon2 {
+          position: absolute;
+          width: 50px;
+          height: 50px;
+          right: -9px;
+          justify-content: center;
+          align-items: center;
+          display: none;
+          background-color: rgba(56, 248, 229, 0.5);
+          border-radius: 15px;
+
+        }
+
+        .soc-fon3 {
+          position: absolute;
+          width: 50px;
+          height: 50px;
+          right: -9px;
+          justify-content: center;
+          align-items: center;
+          display: none;
+          background-color: rgba(255, 251, 3, 0.5);
+          border-radius: 15px;
+
+        }
+
+        .soc-fon4 {
+          position: absolute;
+          width: 50px;
+          height: 50px;
+          right: -9px;
+          justify-content: center;
+          align-items: center;
+          display: none;
+          background-color: rgba(255, 0, 0, 0.5);
+          border-radius: 15px;
+
+        }
+
+        &:hover {
+
+          .soc-fon1,
+          .soc-fon2,
+          .soc-fon3,
+          .soc-fon4 {
             display: block;
-            transition: .4s;
-            border: 1px solid #ffb546;
-            background-image: url(../images/twitter-1.png)no-repeat 50% 50%;
+            opacity: 1;
+            right: -9px;
           }
-          */
         }
       }
     }
