@@ -377,7 +377,8 @@ section {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  margin: 15px 0; }
+  margin: 15px 0;
+  padding-bottom: 65px; }
   .work__row-top .box, .work__row-buttom .box {
     /*width: calc(25% - 15px);*/
     align-items: center;
