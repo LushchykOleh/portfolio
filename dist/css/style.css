@@ -317,14 +317,15 @@ section {
       font-size: 26px;
       font-weight: 700;
       line-height: 1.077;
-      padding: 60px 0 65px; }
+      padding: 40px 0 40px; }
     .education__column .text-18 {
       font-size: 18px;
       font-weight: 700;
       font-family: "Roboto", serif;
       line-height: 1.556;
       color: rgba(255, 255, 255, 0.902);
-      padding: 11px 0 11px; }
+      padding: 11px 0 11px;
+      text-transform: uppercase; }
     .education__column .text-16 {
       font-size: 16px;
       font-weight: 500;
@@ -578,7 +579,6 @@ section {
     padding: 15px;
     align-items: center; }
     .footer__row-top .sociale {
-      display: block;
       transition: 0.3s;
       text-align: center; }
       .footer__row-top .sociale ul {
@@ -592,39 +592,31 @@ section {
         .footer__row-top .sociale ul .be {
           border-right: none; }
         .footer__row-top .sociale ul a {
-          display: flex;
-          align-items: center;
-          /*
-          &:focus {
-            background-image: url(../images/twitter-yellow.png) no-repeat 50% 50%;
-            color: #ffb546;
-  
-          }
-  
-          &:hover {
-            display: block;
-            transition: .4s;
-            border: 1px solid #ffb546;
-            background-image: url(../images/twitter-1.png)no-repeat 50% 50%;
-          }
-          */ }
-          .footer__row-top .sociale ul a img:hover {
-            background: green; }
-    .footer__row-top img {
-      width: 32px;
-      height: auto; }
-  .footer__row-bottom {
-    padding: 15px;
-    align-items: center; }
-    .footer__row-bottom .text-12 {
-      color: rgba(255, 255, 255, 0.502);
-      text-transform: normal;
-      font-size: 12px;
-      font-weight: 400;
-      font-family: "Roboto", serif;
-      color: rgba(255, 255, 255, 0.502);
-      padding: 10px 0 10px;
-      text-align: center; }
+          display: inline-block; }
+          .footer__row-top .sociale ul a img {
+            width: 32px;
+            height: auto; }
+          .footer__row-top .sociale ul a .twit-back {
+            display: none; }
+          .footer__row-top .sociale ul a:hover {
+            background-image: url(../images/twitter-1.png); }
+            .footer__row-top .sociale ul a:hover .twitter {
+              opacity: 0; }
+            .footer__row-top .sociale ul a:hover .twit-back {
+              opacity: 1;
+              display: inline-block; }
+    .footer__row-top__row-bottom {
+      padding: 15px;
+      align-items: center; }
+      .footer__row-top__row-bottom .text-12 {
+        color: rgba(255, 255, 255, 0.502);
+        text-transform: normal;
+        font-size: 12px;
+        font-weight: 400;
+        font-family: "Roboto", serif;
+        color: rgba(255, 255, 255, 0.502);
+        padding: 10px 0 10px;
+        text-align: center; }
 
 
 /*# sourceMappingURL=style.css.map*/
