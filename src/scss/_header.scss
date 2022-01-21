@@ -28,10 +28,20 @@
 
       .header__navigation--inline {
         display: block;
+
+        @include screen(650) {
+          display: none;
+        }
       }
 
       .header__navigation {
         display: none;
+
+        @include screen(650) {
+          display: block;
+          margin-right: 50px;
+          margin-bottom: 45px;
+        }
       }
 
 
