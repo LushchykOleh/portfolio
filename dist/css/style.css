@@ -597,27 +597,21 @@ section {
           .footer__row-top .sociale ul a img {
             width: 32px;
             height: auto; }
-          .footer__row-top .sociale ul a .twit-back {
-            display: none; }
           .footer__row-top .sociale ul a:hover {
-            background-image: url(../images/twitter-1.png); }
-            .footer__row-top .sociale ul a:hover .twitter {
-              opacity: 0; }
-            .footer__row-top .sociale ul a:hover .twit-back {
-              opacity: 1;
-              display: inline-block; }
-    .footer__row-top__row-bottom {
-      padding: 15px;
-      align-items: center; }
-      .footer__row-top__row-bottom .text-12 {
-        color: rgba(255, 255, 255, 0.502);
-        text-transform: normal;
-        font-size: 12px;
-        font-weight: 400;
-        font-family: "Roboto", serif;
-        color: rgba(255, 255, 255, 0.502);
-        padding: 10px 0 10px;
-        text-align: center; }
+            -webkit-filter: invert(100%);
+                    filter: invert(100%); }
+  .footer__row-bottom {
+    padding: 15px;
+    align-items: center; }
+    .footer__row-bottom .text-12 {
+      color: rgba(255, 255, 255, 0.502);
+      text-transform: normal;
+      font-size: 12px;
+      font-weight: 400;
+      font-family: "Roboto", serif;
+      color: rgba(255, 255, 255, 0.502);
+      padding: 10px 0 10px;
+      text-align: center; }
 
 
 /*# sourceMappingURL=style.css.map*/
