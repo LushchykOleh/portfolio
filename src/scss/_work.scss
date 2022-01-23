@@ -32,6 +32,10 @@
     margin: 15px 0;
     padding-bottom: 65px;
 
+    @include screen(1024) {
+      justify-content: space-around;
+    }
+
     .box {
       /*width: calc(25% - 15px);*/
       align-items: center;
