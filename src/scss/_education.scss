@@ -1,10 +1,8 @@
 .education {
 
   color: $white;
-
   background: rgb(0, 0, 0);
   background: linear-gradient(315deg, rgba(0, 0, 0, 1) 15%, rgba(193, 0, 0, 1) 40%, rgba(250, 0, 0, 1) 50%, rgba(136, 0, 0, 0.9808298319327731) 60%, rgba(0, 0, 0, 1) 85%);
-
   position: relative;
 
   &__row {
@@ -16,7 +14,10 @@
       margin: 122px 0 70px;
       display: flex;
 
+    @include screen(1024) {
+      margin: 35px 0;
     }
+  }
   }
 
   &__column {
@@ -72,7 +73,7 @@
         display: block;
         position: relative;
         content: '';
-        width: 500px;
+        max-width: 500px;
         height: 2px;
         background: $white_transparent;
         margin: 30px 0 30px;
@@ -86,13 +87,10 @@
       font-family: $roboto;
       color: rgba(255, 255, 255, 0.502);
       line-height: 1.438;
-
-
-
-
-
     }
 
+    @include screen(1024) {
+      width: calc(50% - 15px);
+    }
   }
-
 }

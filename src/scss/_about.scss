@@ -3,6 +3,9 @@
   display: flex;
   justify-content: space-between;
 
+  @include screen(1024){
+    flex-direction: column;
+  }
   @include screen(650){
     flex-direction: column;
   }
@@ -12,6 +15,14 @@
     width: 40%;
     padding-top: 120px;
     margin-right: 35px;
+
+    @include screen(1024){
+      width: 100%;
+      height: auto;
+      padding-top: 35px;
+      text-align: center;
+      margin-right: 0;
+    }
 
     @include screen(650){
       width: 100%;
@@ -27,6 +38,14 @@
     margin: 170px 0 148px 35px;
     max-width: 680px;
     align-items: start;
+
+    @include screen(1024){
+      width: 100%;
+      margin: 0 auto;
+      padding: 20px 15px;
+      min-width: 950px;
+    
+    }
 
     @include screen(650){
       width: 100%;
