@@ -3,11 +3,23 @@
   display: flex;
   justify-content: space-between;
 
+  @include screen(650){
+    flex-direction: column;
+  }
+
 
   &__left {
     width: 40%;
     padding-top: 120px;
     margin-right: 35px;
+
+    @include screen(650){
+      width: 100%;
+      height: auto;
+      padding-top: 35px;
+      text-align: center;
+      margin-right: 0;
+    }
   }
 
   &__right {
@@ -15,6 +27,12 @@
     margin: 170px 0 148px 35px;
     max-width: 680px;
     align-items: start;
+
+    @include screen(650){
+      width: 100%;
+      margin: 20px 0;
+
+    }
 
     .text-18 {
       font-size: 18px;
@@ -45,6 +63,10 @@
         background: $white;
         color: #ff2b4a;
         border: 1px solid #ff2b4a;
+      }
+
+      @include screen(650){
+        margin: 0 auto;
       }
     }
   }

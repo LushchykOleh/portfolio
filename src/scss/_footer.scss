@@ -32,17 +32,18 @@
         }
 
         a {
-         
           display: inline-block;
 
           img {
             width: 32px;
             height: auto;
-          }         
+          }
+
+          &:hover {
+            filter: invert(100%);;
+          }
         }
       }
-
-
     }
   }
   &__row-bottom {
