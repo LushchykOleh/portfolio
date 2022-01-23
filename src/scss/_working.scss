@@ -3,6 +3,10 @@
   background: $grey;
   padding: 124px 0 124px;
 
+  @include screen(1024){
+    padding: 35px 15px;
+  }
+
   &__box {
     text-align: center;
 
@@ -40,8 +44,8 @@
       margin: 0 15px;
 
       @include screen(850) {
-        width: calc(40% - 30px);
-        margin: 44px;
+        width: calc(49% - 30px);
+        margin: 10px;
       }
 
       @include screen(650) {
@@ -89,6 +93,10 @@
         }
       }
     }
+
+    @include screen(650) {
+      padding-top: 0;
+    }
   }
 
 
@@ -102,13 +110,15 @@
     flex-direction: column;
 
     @include screen(850) {
-      width: 360px;
+      width: calc(100% - 15px);
       height: 300px;
+      padding: 15px 15px;
     }
 
     @include screen(650) {
       width: 550px;
       height: auto;
+      padding: 15px 0;
     }
 
     .text-16 {

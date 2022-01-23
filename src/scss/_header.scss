@@ -23,7 +23,10 @@
       z-index: 7;
 
       .header__navigation-menu {
-        right: -360px !important;
+        // right: -360px !important;
+        right: -360px;
+        
+        
       }
 
       .header__navigation--inline {
